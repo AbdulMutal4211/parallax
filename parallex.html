@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<style>
+body{font-family: Oswald; margin: 0;}    
+span.heading_peace {
+}
+.position_sticky {
+    position: sticky;
+    top: 100px;
+}
+
+h1 {
+    margin: 0;
+    display: flex;
+    font-size: 100px;
+    text-align: center;
+}
+
+section.banner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+}
+.sec_2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+.sec_2 h1{
+    color: #ffff;
+}
+.sec_2 p {
+    color: #ffff;
+}
+.clm:nth-child(2) {
+    overflow-y: scroll;
+    height: 400px;
+}
+.txt_box {
+    margin: 110px 0;
+}
+div#scroll_vall {
+    color: #ffff;
+}
+.clm {
+    padding: 0 25px;
+}
+section.table_Sec {
+    text-align: center;
+    padding: 50px;
+}
+.calculator_body {
+    width: 300px;
+    box-sizing: border-box;
+    margin: auto;
+    background-color: #dbdada;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.calculator_body .screen {
+    width: 100%;
+    height: 40px;
+    background-color: #656c5a;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 9px;
+}
+
+.calculator_body .paid {
+    width: 100%;
+}
+.calculator_body .paid button {
+    width: 50px;
+    height: 30px;
+    margin: 0 0 3px 0;
+}
+table#print_table {
+    margin: 40px auto 0;
+}
+div#print_table table {
+    display: inline-block;
+    margin: 30px 10px 0 10px;
+    border: 1px solid;
+    padding: 10px;
+}
+</style>
+<body>
+
+<section class="banner">
+    <h1>
+        <span class="heading_peace" target="2">P</span>
+        <span class="heading_peace" target="-3">a</span>
+        <span class="heading_peace" target="4">r</span>
+        <span class="heading_peace" target="-5">a</span>
+        <span class="heading_peace" target="6">l</span>
+        <span class="heading_peace" target="-7">l</span>
+        <span class="heading_peace" target="8">a</span>
+        <span class="heading_peace" target="-9">x</span>
+    </h1>
+    <!-- <h1>
+        <span class="heading_peace" target="2">P</span>
+        <span class="heading_peace" target="-2">a</span>
+        <span class="heading_peace" target="2">r</span>
+        <span class="heading_peace" target="-2">a</span>
+        <span class="heading_peace" target="2">l</span>
+        <span class="heading_peace" target="-2">l</span>
+        <span class="heading_peace" target="2">a</span>
+        <span class="heading_peace" target="-2">x</span>
+    </h1> -->
+</section>
+
+<section class="sec_2 mySec">
+    <h1 class="myHeading">This is heading</h1>
+</section>
+<section class="banner">
+    <h1>
+        <input id="myInput" type="number" placeholder="Enter Number"><button id="btn">Check</button>
+    </h1>
+</section>
+<section class="sec_2 ">
+    <div class="clm position_sticky">
+        <img id="dyna_img" src="0.png">
+        <div id="scroll_vall"></div>
+    </div>
+    <div id="clmScroll" class="clm">
+        <div class="ctm_scroll">
+            <div class="txt_box">
+                <h1>This is image 0</h1>
+                <p>Here is the image descripton</p>
+            </div>
+            <div class="txt_box">
+                <h1>This is image 1</h1>
+                <p>Here is the image descripton</p>
+            </div>
+            <div class="txt_box">
+                <h1>This is image 2</h1>
+                <p>Here is the image descripton</p>
+            </div>
+            <div class="txt_box">
+                <h1>This is image 3</h1>
+                <p>Here is the image descripton</p>
+            </div>
+            <div class="txt_box">
+                <h1>This is image 4</h1>
+                <p>Here is the image descripton</p>
+            </div>
+            <div class="txt_box">
+                <h1>This is image 5</h1>
+                <p>Here is the image descripton</p>
+            </div>
+            <div class="txt_box">
+                <h1>This is image 6</h1>
+                <p>Here is the image descripton</p>
+            </div>
+            <div class="txt_box">
+                <h1>This is image 7</h1>
+                <p>Here is the image descripton</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="table_Sec">
+    <input type="number" id="tableName" placeholder="Enter Table Name Example 2,3,4,5">
+    <input type="number" id="tableNumber" placeholder="Enter Table Number">
+    <button id="start">Start Table</button>
+    <div width="200" id="print_table">
+       
+    </d>
+</section>
+<section class="caculator_Sec">
+    <div class="calculator_body">
+        <input type="text"class="screen"/>
+        <div class="paid">
+            <button class="btn1 btn" data="1">1</button>
+            <button class="btn2 btn" data="2">2</button>
+            <button class="btn3 btn" data="3">3</button>
+            <button class="btn4 btn" data="4">4</button>
+            <button class="btn5 btn" data="5">5</button>
+            <button class="btn6 btn" data="6">6</button>
+            <button class="btn7 btn" data="7">7</button>
+            <button class="btn8 btn" data="8">8</button>
+            <button class="btn9 btn" data="9">9</button>
+            <button class="btn0 btn" data="0">0</button>
+            <button class="btn+ btn" data="+">+</button>
+            <button class="btn- btn" data="-">-</button>
+            <button class="btn* btn" data="*">*</button>
+            <button class="btn/ btn" data="/">/</button>
+            <button class="equelto">=</button>
+            <button class="clear">C</button>
+            <button class="delete">Del</button>
+        </div>
+    </div>
+</section>
+<script>
+
+let section = document.querySelector('.mySec');
+let heading_move = document.querySelector('.myHeading'); 
+
+section.addEventListener('mousemove', (e)=>{
+
+    let X = (e.clientX / innerWidth) * 2-1;
+    let Y = (e.clientY / innerHeight) * 2-1;
+    
+    // heading_move.style.left= (X * 50)+"px";
+    // heading_move.style.top= (Y * 50)+"px";
+
+    heading_move.style.transform="translate("+ (X * 50) +"px,"+(Y * 50)+"px)";
+});
+
+
+
+
+
+// CALCULATOR
+let calBtn = document.querySelectorAll('.btn');
+let screen = document.querySelector('.screen');
+let clearBtn = document.querySelector('.clear');
+let equelto = document.querySelector('.equelto');
+let delBtn = document.querySelector('.delete');
+
+calBtn.forEach((item)=>{
+    item.addEventListener('click',()=>{
+        screen.value += item.getAttribute('data');
+    });
+});
+
+clearBtn.addEventListener('click',()=>{
+    screen.value = "";
+});
+
+equelto.addEventListener('click',()=>{
+    // alert(eval(screen.value));
+    screen.value= eval(screen.value);
+});
+delBtn.addEventListener('click',()=>{
+    screen.value= screen.value.length;
+});
+// CALCULATOR
+
+
+
+// TABLE GENERATOR
+let start = document.getElementById('start');
+let tableName = document.getElementById('tableName');
+let tableNumber = document.getElementById('tableNumber');
+let print_table = document.getElementById('print_table');
+start.addEventListener('click',()=>{
+
+    let table = document.createElement('table');
+    print_table.appendChild(table);
+
+    for(i=1; i<=tableNumber.value; i++){
+        let tr = document.createElement('tr');
+        table.appendChild(tr); 
+        tr.innerHTML=`
+            <td>${tableName.value}</td>
+            <td>x</td>
+            <td>${i}</td>
+            <td>=</td>
+            <td>${tableName.value*i}</td>
+        `;
+    }
+});
+// TABLE GENERATOR
+
+
+
+
+// CHECK EVE ODD NUMBER
+let btn = document.getElementById('btn');
+let myInput = document.getElementById('myInput');
+btn.addEventListener('click', ()=> {
+
+    if(myInput.value % 2 == 0) {
+        alert('The number is even.');
+    }
+    else{
+        alert('The number is odd.');
+    }
+});
+// CHECK EVE ODD NUMBER
+
+
+
+
+
+// HEADIN ANIMATION ON SCROLL
+let hding_peace = document.querySelectorAll('.heading_peace');
+let dyna_img = document.getElementById('dyna_img');
+let clmScroll = document.getElementById('clmScroll');
+let scroll_vall = document.getElementById('scroll_vall');
+window.addEventListener("scroll" , ()=> {
+    let scrll = window.pageYOffset;
+    hding_peace.forEach((item)=>{
+        let target = item.getAttribute('target');
+        item.style.transform="translateY(" + scrll / target +"px)";      
+    });
+});   
+// HEADIN ANIMATION ON SCROLL
+
+
+clmScroll.addEventListener('scroll', ()=> {
+    let getScroll = clmScroll.scrollTop;
+    scroll_vall.innerHTML = getScroll;
+
+    if(getScroll > 299 ){
+        dyna_img.setAttribute("src","100.png");
+    }
+    else if(getScroll > 399 ){
+        dyna_img.setAttribute("src","200.png");
+    }
+
+});
+</script>    
+
+
+ 
+
+</script> 
+</body>
+</html>
